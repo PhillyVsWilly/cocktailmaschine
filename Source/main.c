@@ -93,6 +93,13 @@ int main(void)
 /***********************/
 //Tasks
 /***********************/
+/* Once every 1000ms, the following Code is executed:
+* Read all Sensor Values (in this case: The blue Button)
+*Based on the Sensor Values: Calculate the output values 
+*Write the output values
+*The starting time is stored in the beginning. vTaskDelayUntil() then waits until it is 1000ms after the stored time to make the 
+*task ready again.*/
+
 void vMainCycle(void* pvParameters)
 {
 	  /* -3- Toggle IOs in an infinite loop */
@@ -115,7 +122,7 @@ void vMainCycle(void* pvParameters)
 		
 		
 		//Delay until next Second
-		//vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));	
+		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));	
 		
 		
   }
