@@ -402,6 +402,41 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Modules</GroupName>
+          <Files>
+            <File>
+              <FileName>Module_1_Transportation.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\Module_1_Transportation.c</FilePath>
+            </File>
+            <File>
+              <FileName>Module_2_Gravity.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\Module_2_Gravity.c</FilePath>
+            </File>
+            <File>
+              <FileName>Module_3_Pumping.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\Module_3_Pumping.c</FilePath>
+            </File>
+            <File>
+              <FileName>Module_4_Pouring.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\Module_4_Pouring.c</FilePath>
+            </File>
+            <File>
+              <FileName>Module_5_Sensors.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\Module_5_Sensors.c</FilePath>
+            </File>
+            <File>
+              <FileName>Module_6_Handling.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\Module_6_Handling.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>HardwareStartup</GroupName>
           <Files>
             <File>

@@ -56,6 +56,7 @@
 /* Private variables ---------------------------------------------------------*/
 InputValues_t Input_Storage;
 OutputValues_t Output_Storage;
+SystemState_t System_State;
 /* Private function prototypes -----------------------------------------------*/
 
 
@@ -115,7 +116,7 @@ void vMainCycle(void* pvParameters)
 		vReadSensorValues(&Input_Storage);
 				
 		//Berechnen
-		vEvaluate(Input_Storage, &Output_Storage);
+		vEvaluate(Input_Storage,&System_State, &Output_Storage);
 
 		//Ausgabe schreiben
 		vWriteActuatorValues(Output_Storage);
