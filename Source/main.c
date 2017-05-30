@@ -46,6 +46,7 @@
 #include "Sensors.h"
 #include "Evaluation.h"
 #include "Actuators.h"
+#include "Debug.h"
 
 
 
@@ -120,7 +121,6 @@ void vMainCycle(void* pvParameters)
 
 		//Ausgabe schreiben
 		vWriteActuatorValues(Output_Storage);
-		
 		
 		//Delay until next Second
 		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));	
