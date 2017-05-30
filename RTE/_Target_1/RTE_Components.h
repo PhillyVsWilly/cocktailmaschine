@@ -16,6 +16,8 @@
  */
 #define CMSIS_device_header "stm32f3xx.h"
 
+#define RTE_Compiler_IO_STDOUT          /* Compiler I/O: STDOUT */
+          #define RTE_Compiler_IO_STDOUT_ITM      /* Compiler I/O: STDOUT ITM */
 #define RTE_RTOS_FreeRTOS_CONFIG        /* RTOS FreeRTOS Config for FreeRTOS API */
 #define RTE_RTOS_FreeRTOS_CORE          /* RTOS FreeRTOS Core */
 #define RTE_RTOS_FreeRTOS_COROUTINE     /* RTOS FreeRTOS Co-routines */

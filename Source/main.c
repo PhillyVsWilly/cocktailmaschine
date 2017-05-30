@@ -121,6 +121,8 @@ void vMainCycle(void* pvParameters)
 		//Ausgabe schreiben
 		vWriteActuatorValues(Output_Storage);
 		
+		//Message for debugging
+		printf("Debug Message\n");
 		
 		//Delay until next Second
 		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));	
