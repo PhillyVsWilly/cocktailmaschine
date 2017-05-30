@@ -30,6 +30,7 @@
 ".\stm32f3xx_hal_uart_ex.o"
 ".\stm32f3xx_hal_usart.o"
 ".\stm32f3xx_nucleo.o"
+".\debug.o"
 ".\retarget_io.o"
 ".\freertos_evr.o"
 ".\croutine.o"
