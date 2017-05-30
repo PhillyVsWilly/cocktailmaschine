@@ -15,8 +15,23 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/*Do not use these Funktions directly!!*/
+#if DEBUG_ENABLED
+
 int debugPrintWarning(char* s, ...);
 int debugPrintMessage(char* s, ...);
 int debugPrintError(char* s, ...);
+
+/*use the following macros instead*/
+
+#define DPRINT_WARNING(s, ...) debugPrintWarning(s, __VA_ARGS__)
+#define DPRINT_MESSAGE(s, ...) debugPrintMessage(s, __VA_ARGS__)
+#define DPRINT_ERROR(s, ...) debugPrintError(s, __VA_ARGS__)
+#else
+#define DPRINT_WARNING
+#define DPRINT_ERROR
+#define DPRINT_MESSAGE
+#endif
+
 
 #endif

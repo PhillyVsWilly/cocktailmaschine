@@ -6,9 +6,11 @@
  */
 
 #include "Debug.h"
+#include "String.h"
+
+#ifdef DEBUG_ENABLED
 
 int debugPrintWarning(char* s, ...) {
-	if (DEBUG_ENABLED) {
 		va_list arg;
 		int done;
 		
@@ -23,11 +25,9 @@ int debugPrintWarning(char* s, ...) {
 		free(a);
 		
 		return done;
-  }
 }
 
 int debugPrintMessage(char* s, ...) {
-	if (DEBUG_ENABLED) {
 		va_list arg;
 		int done;
 		
@@ -42,10 +42,8 @@ int debugPrintMessage(char* s, ...) {
 		free(a);
 		
 		return done;
-  }
 }
 int debugPrintError(char* s, ...) {
-	if (DEBUG_ENABLED) {
 		va_list arg;
 		int done;
 		
@@ -60,5 +58,6 @@ int debugPrintError(char* s, ...) {
 		free(a);
 		
 		return done;
-  }
 }
+#endif
+
