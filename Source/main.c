@@ -107,7 +107,8 @@ void vMainCycle(void* pvParameters)
 	  /* -3- Toggle IOs in an infinite loop */
   while (1)
   {
-		
+		DPRINT_MESSAGE("Main Cycle Start\n");
+		DPRINT_WARNING("Warning\n");
 
 		//Store Tick Count
 		TickType_t xLastWakeTime;
