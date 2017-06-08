@@ -434,6 +434,11 @@
               <FileType>1</FileType>
               <FilePath>.\Source\Module_6_Handling.c</FilePath>
             </File>
+            <File>
+              <FileName>Module_7_Ice.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\Module_7_Ice.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

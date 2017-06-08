@@ -33,6 +33,9 @@ typedef struct{
 	int placeholder;
 	} Module_State_6_Handling_t;
 
+typedef struct{
+	int placeholder;
+	}Module_State_7_Ice_t;
 
 typedef struct{
 	State_General_t General;
@@ -42,6 +45,7 @@ typedef struct{
 	Module_State_4_Pouring_t Pouring;
 	Module_State_5_Sensors_t Sensors;
 	Module_State_6_Handling_t Handling;
+	Module_State_7_Ice_t Ice;
 																									} SystemState_t;
 
 /*End Type Definitions*/																									

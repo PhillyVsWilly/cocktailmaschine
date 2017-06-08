@@ -9,6 +9,7 @@
 ".\module_4_pouring.o"
 ".\module_5_sensors.o"
 ".\module_6_handling.o"
+".\module_7_ice.o"
 ".\hardwaresetup.o"
 ".\startup_stm32f303xe.o"
 ".\system_stm32f3xx.o"
