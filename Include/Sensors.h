@@ -38,6 +38,9 @@ typedef struct {
 	int placeholder;
 }Ice_Input_t;
 
+typedef struct {
+	int placeholder;
+} Module_x_Name_t;
 //Define the Type where all input values will be stored later.
 //Same idea as in Evaluation.h, a struct for each modul to keep the oversight.
 typedef struct {
@@ -50,6 +53,7 @@ typedef struct {
 	Sensors_Input_t Sensors;
 	Handling_Input_t Handling;
 	Ice_Input_t Ice;
+	Module_x_Name_t Module_x_Name;
 	
 		
 } InputValues_t;

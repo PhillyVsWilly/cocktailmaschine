@@ -4,7 +4,7 @@
 
 void vEvaluate_Module_4_Pouring(InputValues_t input, Module_State_4_Pouring_t* state, OutputValues_t* output)
 {
-	/// TODO: Berechne die Ausgangswerte für Modul 1
+	/* TODO: Anpassen auf neues Template
 	float weight_difference = input.Pouring.desired_weight - input.Pouring.weight ;
 	if (input.Pouring.start == 0 && state->placeholder == 0){
 		DPRINT_MESSAGE("Pouring : Not active and no start signal\n");
@@ -33,4 +33,6 @@ void vEvaluate_Module_4_Pouring(InputValues_t input, Module_State_4_Pouring_t* s
 	}
 	
 	return;
+	*/
+	
 }
