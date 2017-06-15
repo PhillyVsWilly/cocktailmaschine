@@ -49,7 +49,6 @@
 #include "Debug.h"
 
 
-
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 #define MAIN_CYCLE_PRIORITY (tskIDLE_PRIORITY+1)
@@ -125,6 +124,25 @@ void vMainCycle(void* pvParameters)
 		
 		//Delay until next Second
 		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000));	
+		
+		/************************************/
+		//Delete later
+		HAL_ADC_Start(&HS_ADC_Conf);
+		  /* Wait for the end of conversion */
+			if (HAL_ADC_PollForConversion(&HS_ADC_Conf, 10) != HAL_TIMEOUT)
+		{
+			/* Get the converted value of regular channel */
+			int KeyConvertedValue = HAL_ADC_GetValue(&HS_ADC_Conf);
+			DPRINT_MESSAGE("ADC Value: %d\r\n", KeyConvertedValue);
+		}
+		
+		else 
+		{
+			DPRINT_MESSAGE("ADC Timeout");
+		}
+		
+		
+		
 		
 		
   }
