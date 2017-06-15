@@ -9,7 +9,9 @@
 #ifndef __DEBUG_H
 #define __DEBUG_H
 
+#ifndef DEBUG_ENABLED
 #define DEBUG_ENABLED 1 //Debug value to know if we are in debug
+#endif
 
 #include <stdarg.h>
 #include <stdlib.h>
@@ -26,7 +28,7 @@ int debugPrintError(char* s, ...);
 
 #define DPRINT_WARNING(...) debugPrintWarning (__VA_ARGS__)
 #define DPRINT_MESSAGE(...) debugPrintMessage(__VA_ARGS__)
-#define DPRINT_ERROR(s,...) debugPrintError(__VA_ARGS__)
+#define DPRINT_ERROR(...) debugPrintError(__VA_ARGS__)
 #else
 #define DPRINT_WARNING(...)
 #define DPRINT_ERROR(...)
